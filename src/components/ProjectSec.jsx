@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export const ProjectSec = ({ reverse = false }) => {
 	return (
 		<>
-			<div className="text-dark dark:text-light  items-center justify-center max-w-[90vw] mx-auto md:w-[70vw] 2xl:w-[60vw] md:items-start p-10 mb-32 border border-solid shadow-[5px_0px_0px_5px] rounded-2xl ">
+			<div className="text-dark dark:text-light  items-center justify-center max-w-[90vw] mx-auto md:w-[70vw] 2xl:w-[60vw] md:items-start p-10 mb-16 border border-solid shadow-[5px_0px_0px_5px] rounded-2xl ">
 				<div
 					className={`flex flex-col gap-10 ${
 						reverse ? "md:flex-row-reverse" : "md:flex-row"

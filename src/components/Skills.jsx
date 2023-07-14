@@ -25,13 +25,13 @@ const Skills = () => {
 								transition: { duration: 0.2 },
 								y: -10,
 							}}
-							className="flex h-[15vh] justify-center  flex-col w-[15vw] text-center items-center
+							className="flex h-[30vh] justify-center  flex-col w-[40vw] text-center items-center
 							 shadow-dark shadow-[5px_0px_0px_5px] rounded-2xl border-solid border-dark 
 							
 							
 							 dark:shadow-[#000] dark:border-white
 							 
-							 md:h-[20vh]
+							 md:h-[20vh] md:w-[15vw]
 							 "
 						>
 							<div className="text-dark dark:text-white ">
