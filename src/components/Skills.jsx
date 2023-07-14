@@ -16,7 +16,7 @@ const Skills = () => {
 						</h2>
 					</div>
 				</div>
-				<div className="flex gap-10  mt-10  w-[100vw] justify-center mx-auto flex-wrap md:w-[50vw] ">
+				<div className="flex gap-10  mt-10  w-[100vw] justify-center mx-auto flex-wrap md:w-[80vw] ">
 					{skillsImages.map((skill) => (
 						<motion.div
 							key={skill.title}
@@ -29,7 +29,10 @@ const Skills = () => {
 							 shadow-dark shadow-[5px_0px_0px_5px] rounded-2xl border-solid border-dark 
 							
 							
-							 dark:shadow-[#000] dark:border-white"
+							 dark:shadow-[#000] dark:border-white
+							 
+							 md:h-[20vh]
+							 "
 						>
 							<div className="text-dark dark:text-white ">
 								<img

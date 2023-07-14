@@ -8,7 +8,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
 	return (
 		<li
 			ref={ref}
-			className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between "
+			className="my-8 first:mt-0 last:mb-0 w-[70%] mx-auto flex flex-col items-center justify-between "
 		>
 			<LiIcon reference={ref} />
 			<motion.div
@@ -17,7 +17,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
 				transition={{ duration: 0.5, type: "spring" }}
 			>
 				<h3 className="capitalize font-bold text-2xl">
-					{position}&nbsp;{" "}
+					{position}
 					<a
 						href={companyLink}
 						target="_blank"
@@ -74,7 +74,7 @@ const Experience = () => {
 						Strapi, HTML e CSS com TypeScript e JavaScript."
 					/>
 					<Details
-						position="Introdução ao Desenvolvimento Front-End  "
+						position="Introdução ao Desenvolvimento Front-End"
 						company="Meta"
 						time="Junho-2023"
 						work="Um curso on-line sem créditos autorizado pela Meta e ministrado
