@@ -27,7 +27,7 @@ const Home = () => {
 						</p>
 						<div className="flex self-center flex-col gap-4 lg:gap-6 items-center mt-2 md:flex-row">
 							<Link
-								to="/curriculo.pdf"
+								to="/gabrielenkeResume.pdf"
 								target={"_blank"}
 								className="group flex items-center bg-dark text-light p-2.5 px-6 
 									rounded-lg text-lg font-semibold hover:bg-light hover:text-dark 
