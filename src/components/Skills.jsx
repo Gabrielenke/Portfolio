@@ -7,6 +7,7 @@ const Skills = () => {
 			<section className="flex flex-col  justify-center items-center min-h-screen text-center ">
 				<div className=" flex flex-col mx-auto gap-5 justify-center items-center   ">
 					<AnimatedText text="Skills" className="!text-6xl" />
+
 					<div className="flex items-center text-center justify-center font-bold text-2xl">
 						<h2 className="">
 							Para mais informacoes acesse meu perfil no{" "}
@@ -16,6 +17,7 @@ const Skills = () => {
 						</h2>
 					</div>
 				</div>
+
 				<div className="flex gap-10  mt-10  w-[100vw] justify-center mx-auto flex-wrap md:w-[80vw] ">
 					{skillsImages.map((skill) => (
 						<motion.div
