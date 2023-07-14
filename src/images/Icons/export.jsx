@@ -9,7 +9,7 @@ import PYTHON from "../Icons/python-original.svg";
 import TAILWINDCSs from "../Icons/tailwindcss-plain.svg";
 import TypeScript from "../Icons/typescript-plain.svg";
 import hamburger from "../Icons/hamburger.svg";
-import gifCV from "../Icons/gifCV.gif";
+import gifCV from "../Icons/gifCv.gif";
 import pngCV from "../Icons/pngCV.png";
 
 export {
