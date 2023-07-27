@@ -5,37 +5,34 @@ const TypeWriter = () => {
 		return new Promise((resolve) => setTimeout(resolve, ms));
 	}
 
-	const phrases = ["Front-end Developer"];
+	const phrases = [
+		"Welcome to my Portfolio",
+		"Front-end Developer",
+		"Computer Engineering student",
+	];
 
 	const el = useRef(null);
 
 	const sleepTime = 100;
 
-	let curPhraseIndex = 0;
-
 	const writeLoop = async () => {
 		while (true) {
-			let curWord = phrases[curPhraseIndex];
+			for (let j = 0; j < phrases.length; j++) {
+				let curPhrase = phrases[j];
 
-			for (let i = 0; i < curWord.length; i++) {
-				el.current.innerText = curWord.substring(0, i + 1);
-				await sleep(sleepTime);
-			}
+				for (let i = 0; i <= curPhrase.length; i++) {
+					el.current.innerText = curPhrase.substring(0, i);
+					await sleep(sleepTime);
+				}
 
-			await sleep(sleepTime * 10);
+				await sleep(sleepTime * 10);
 
-			for (let i = curWord.length; i > 0; i--) {
-				el.current.innerText = curWord.substring(0, i - 1);
+				for (let i = curPhrase.length; i >= 0; i--) {
+					el.current.innerText = curPhrase.substring(0, i);
+					await sleep(sleepTime);
+				}
 
-				await sleep(sleepTime);
-			}
-
-			await sleep(sleepTime * 10);
-
-			if (curPhraseIndex === phrases.length - 1) {
-				curPhraseIndex = 0;
-			} else {
-				curPhraseIndex++;
+				await sleep(sleepTime * 10);
 			}
 		}
 	};
@@ -47,7 +44,7 @@ const TypeWriter = () => {
 	return (
 		<div className="w-auto h-32px mb-5 ">
 			<span
-				className="text-primary dark:text-primaryDark font-bold text-2xl mb-5 border-r-2 border-solid animate-typing   "
+				className=" text-primary dark:text-primaryDark font-bold text-2xl mb-5 border-r-2 border-solid animate-typing   "
 				ref={el}
 			></span>
 		</div>

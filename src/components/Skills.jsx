@@ -6,7 +6,10 @@ const Skills = () => {
 		<>
 			<section className="flex flex-col  justify-center items-center min-h-screen text-center ">
 				<div className=" flex flex-col mx-auto gap-5 justify-center items-center   ">
-					<AnimatedText text="Skills" className="!text-6xl" />
+					<div className=" ">
+						<h2 className="font-bold text-7xl">Skills</h2>
+						<div className="w-full border-b-[3px] border-solid border-primary dark:border-primaryDark h-4 " />
+					</div>
 
 					<div className="flex items-center text-center justify-center font-bold text-2xl">
 						<h2 className="">

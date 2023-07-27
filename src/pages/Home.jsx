@@ -7,13 +7,13 @@ import { gifCV, pngCV } from "../images/Icons/export";
 const Home = () => {
 	return (
 		<>
-			<main className="flex items-center justify-center  text-dark dark:text-light w-screen  mt-20 md:mt-0 md:h-[calc(100vh-104px)] ">
+			<main className="flex items-center justify-center  text-dark dark:text-light w-screen mt-20 md:mt-0 md:h-[calc(100vh-104px)] ">
 				<div className="flex flex-col items-center  justify-between w-full md:flex-row md:w-[80vw] ">
 					<div className="flex justify-center items-center w-full  mx-auto md:w-screen  ">
 						<img
+							className="w-[70vw] xl:w-[40vw] h-auto animate-moveup "
+							alt="Imagem astronauta"
 							src={Astronalta}
-							alt="GabrielEnke"
-							className="w-[70vw] xl:w-[40vw] h-auto"
 						/>
 					</div>
 

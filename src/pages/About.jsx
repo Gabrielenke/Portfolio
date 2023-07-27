@@ -1,19 +1,12 @@
-import AnimatedText from "../components/AnimatedText";
-import { FotoAbout } from "../images/profile/export";
-import Skills from "../components/Skills";
+import { FotoTesteAbout2 } from "../images/profile/export";
 import Experience from "../components/Experience";
-import Education from "../components/Education";
 import { motion } from "framer-motion";
 
-const about = () => {
+const About = () => {
 	return (
 		<>
 			<main className="flex flex-col w-full items-center justify-center  dark:text-light ">
 				<section className="flex flex-col gap-20 min-h-screen items-center justify-center ">
-					<AnimatedText
-						text={`Practice makes perfect`}
-						className="!text-4xl md:!text-6xl !mt-16 md:!mt-0 md:!mb-20 "
-					/>
 					<div
 						className="flex flex-col-reverse 	mb-32  w-full items-center justify-center mx-auto gap-20
 						md:flex-row md:w-[60vw]	
@@ -24,8 +17,9 @@ const about = () => {
 							className=" flex  w-[80vw] flex-col items-start
 						 self-center justify-center gap-2 "
 						>
-							<h2 className="mb-4 text-4xl font-bold uppercase text-dark/75 dark:text-light/75">
+							<h2 className="mb-4 text-4xl font-bold uppercase text-dark/75 dark:text-light/75 ">
 								About
+								<div className="w-1/2 border-b-[3px] border-solid border-primary dark:border-primaryDark h-4 " />
 							</h2>
 							<p className="font-medium text-xl">
 								Olá, sou Gabriel Enke, Sou apaixonado por aprender coisas novas
@@ -42,25 +36,22 @@ const about = () => {
 							</p>
 						</div>
 
-						<motion.div
-							className="w-[50vw]  rounded-full  "
-							whileHover={({ scale: 1.1 }, { y: -10 })}
-						>
+						<motion.div className="w-[50vw]  ">
 							<img
-								src={FotoAbout}
+								src={FotoTesteAbout2}
 								alt="gabrielenke"
-								className="w-full h-auto   "
+								className=" w-full rounded-xl  "
 							/>
 						</motion.div>
 					</div>
 				</section>
-
-				<Skills />
-				<Experience />
-				<Education />
+				<section>
+					<Experience />
+					<Experience education={true} />
+				</section>
 			</main>
 		</>
 	);
 };
 
-export default about;
+export default About;

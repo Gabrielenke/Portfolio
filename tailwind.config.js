@@ -6,11 +6,17 @@ export default {
 		extend: {
 			animation: {
 				typing: "blink 1s linear infinite",
+				moveup: "up 2s ease-in-out infinite alternate",
 			},
 			keyframes: {
 				blink: {
 					"0%,100%": { "border-right-color": "0adea3" },
 					"50%": { "border-right-color": "transparent" },
+				},
+				up: {
+					to: {
+						transform: "translateY(20px)",
+					},
 				},
 			},
 			colors: {
