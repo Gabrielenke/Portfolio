@@ -23,7 +23,7 @@ const About = () => {
           alt=""
         />
         <img
-          className="absolute left-0 top-[145%] w-52 md:hidden "
+          className="absolute left-0 w-52 xxs:top-[140%] xs:top-[135%] md:hidden "
           src={HomeLeft}
           alt=""
         />
