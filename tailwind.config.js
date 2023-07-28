@@ -3,6 +3,9 @@ export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	darkMode: "class",
 	theme: {
+		fontFamily: {
+			Sugarpunch: ["Sugarpunch DEMO", "sans-serif"],
+		},
 		extend: {
 			animation: {
 				typing: "blink 1s linear infinite",
@@ -20,12 +23,12 @@ export default {
 				},
 			},
 			colors: {
-				dark: "#1b1b1b",
+				dark: "#000",
 				light: "#f5f5f5",
 				primary: "#db2777", // 240,86,199
 				primaryDark: "#2563eb", // 80,230,217
 			},
 		},
 	},
-	plugins: [],
+	plugins: ["prettier-plugin-tailwindcss"],
 };

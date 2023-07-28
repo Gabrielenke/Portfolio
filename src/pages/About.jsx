@@ -1,11 +1,14 @@
-import { FotoTesteAbout2 } from "../images/profile/export";
+import { HomeLeft, HomeRight } from "../images/homeImg/export";
 import Experience from "../components/Experience";
 import { motion } from "framer-motion";
+import { aboutPhoto } from "../images/aboutImg/export";
 
 const About = () => {
 	return (
 		<>
 			<main className="flex flex-col w-full items-center justify-center  dark:text-light ">
+				<img className="absolute top-[70%] left-0 " src={HomeLeft} alt="" />
+				<img className="absolute top-[180%] right-0  " src={HomeRight} alt="" />
 				<section className="flex flex-col gap-20 min-h-screen items-center justify-center ">
 					<div
 						className="flex flex-col-reverse 	mb-32  w-full items-center justify-center mx-auto gap-20
@@ -15,9 +18,9 @@ const About = () => {
 					>
 						<div
 							className=" flex  w-[80vw] flex-col items-start
-						 self-center justify-center gap-2 "
+						 self-center justify-center gap-2 z-50"
 						>
-							<h2 className="mb-4 text-4xl font-bold uppercase text-dark/75 dark:text-light/75 ">
+							<h2 className="mb-4 text-4xl font-bold uppercase text-dark/75 dark:text-light/75 font-Sugarpunch">
 								About
 								<div className="w-1/2 border-b-[3px] border-solid border-primary dark:border-primaryDark h-4 " />
 							</h2>
@@ -38,7 +41,7 @@ const About = () => {
 
 						<motion.div className="w-[50vw]  ">
 							<img
-								src={FotoTesteAbout2}
+								src={aboutPhoto}
 								alt="gabrielenke"
 								className=" w-full rounded-xl  "
 							/>

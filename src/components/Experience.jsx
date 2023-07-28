@@ -13,7 +13,9 @@ const Experience = ({ education }) => {
 		<>
 			{education ? (
 				<div className="my-32 ">
-					<h2 className="font-bold text-6xl mb-32 text-center">Formação</h2>
+					<h2 className="font-bold text-6xl mb-32 text-center font-Sugarpunch">
+						Formação
+					</h2>
 					<div ref={ref} className="w-[80%] mx-auto relative ">
 						<ul className="w-full flex flex-col items-start justify-between ml-6 md:ml-0">
 							<motion.div
@@ -33,7 +35,9 @@ const Experience = ({ education }) => {
 				</div>
 			) : (
 				<div className="my-32 ">
-					<h2 className="font-bold text-6xl mb-32 text-center">Cursos</h2>
+					<h2 className="font-bold text-6xl mb-32 text-center font-Sugarpunch">
+						Cursos
+					</h2>
 					<div ref={ref} className="w-[80%] mx-auto relative ">
 						<ul className="w-full flex flex-col items-start justify-between ml-6 md:ml-0">
 							<motion.div

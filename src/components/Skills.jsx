@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Skills = () => {
 	return (
 		<>
-			<section className="flex flex-col  justify-center items-center min-h-screen text-center ">
+			{/* <section className="flex flex-col  justify-center items-center min-h-screen text-center ">
 				<div className=" flex flex-col mx-auto gap-5 justify-center items-center   ">
 					<div className=" ">
 						<h2 className="font-bold text-7xl">Skills</h2>
@@ -49,7 +49,8 @@ const Skills = () => {
 						</motion.div>
 					))}
 				</div>
-			</section>
+			</section> */}
+			<section>oi</section>
 		</>
 	);
 };

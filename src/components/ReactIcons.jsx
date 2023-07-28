@@ -1,56 +1,56 @@
 import {
-	CSS,
-	HTML,
-	JS,
-	ReactJS,
-	GIT,
-	GITHUB,
-	Vscode,
-	PYTHON,
-	TAILWINDCSs,
-	TypeScript,
-} from "../images/Icons/export";
+	css,
+	html,
+	javascript,
+	reactjs,
+	typescript,
+	git,
+	python,
+	vscode,
+	github,
+	tailwind,
+} from "../images/skillsImg/export";
 
 export const skillsImages = [
 	{
 		title: "HTML",
-		img: HTML,
+		img: html,
 	},
 	{
 		title: "CSS",
-		img: CSS,
+		img: css,
 	},
 	{
 		title: "Javascript",
-		img: JS,
+		img: javascript,
 	},
 	{
 		title: "React",
-		img: ReactJS,
+		img: reactjs,
 	},
 	{
 		title: "Git",
-		img: GIT,
+		img: git,
 	},
 	{
 		title: "",
-		img: GITHUB,
+		img: github,
 	},
 
 	{
 		title: "Python",
-		img: PYTHON,
+		img: python,
 	},
 	{
 		title: "Tailwind",
-		img: TAILWINDCSs,
+		img: tailwind,
 	},
 	{
 		title: "VsCode",
-		img: Vscode,
+		img: vscode,
 	},
 	{
 		title: "TypeScript",
-		img: TypeScript,
+		img: typescript,
 	},
 ];

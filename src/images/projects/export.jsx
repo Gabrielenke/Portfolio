@@ -1,2 +1,3 @@
-import Project1 from "../projects/crypto-screener-cover-image.jpg";
-export { Project1 };
+import mockupPack from "./mockupPack.jpg";
+
+export { mockupPack };

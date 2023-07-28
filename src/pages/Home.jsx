@@ -1,67 +1,73 @@
-import { Astronalta } from "../images/profile/export";
-import AnimatedText from "../components/AnimatedText";
-import { Link } from "react-router-dom";
-import TypeWriter from "../components/TypeWriter";
-import { gifCV, pngCV } from "../images/Icons/export";
+import AnimatedText from '../components/AnimatedText';
+import { Link } from 'react-router-dom';
+import { gifCV, pngCV } from '../images/Icons/export';
+import { motion } from 'framer-motion';
+import { GithubIcon, LinkedInIcon } from '../components/Icons';
+import { HomeLeft, HomeRight } from '../images/homeImg/export';
 
 const Home = () => {
-	return (
-		<>
-			<main className="flex items-center justify-center  text-dark dark:text-light w-screen mt-20 md:mt-0 md:h-[calc(100vh-104px)] ">
-				<div className="flex flex-col items-center  justify-between w-full md:flex-row md:w-[80vw] ">
-					<div className="flex justify-center items-center w-full  mx-auto md:w-screen  ">
-						<img
-							className="w-[70vw] xl:w-[40vw] h-auto animate-moveup "
-							alt="Imagem astronauta"
-							src={Astronalta}
-						/>
-					</div>
-
-					<div className="w-[70vw] md:w-full flex flex-col items-center  self-center md:items-center ">
-						<AnimatedText
-							className="!text-5xl md:!text-7xl"
-							text="Gabriel Enke"
-						/>
-						<p className="my-4 text-base font-medium">
-							<TypeWriter />
-						</p>
-						<div className="flex self-center flex-col gap-4 lg:gap-6 items-center mt-2 md:flex-row">
-							<Link
-								to="/gabrielenkeResume.pdf"
-								target={"_blank"}
-								className="group flex items-center bg-dark text-light p-2.5 px-6 
-									rounded-lg text-lg font-semibold hover:bg-light hover:text-dark 
-									border-2 border-solid border-transparent hover:border-dark
+  return (
+    <>
+      <section className="relative -mt-36 flex min-h-screen items-center justify-center md:-mt-32 md:h-[calc(100vh-204px)]">
+        <div className="flex flex-col items-center justify-center text-dark dark:text-light">
+          <p className="mb-5 font-Sugarpunch text-2xl md:text-4xl">Hi, I'm</p>
+          <h1 className=" mb-4 font-Sugarpunch text-6xl md:text-8xl">
+            Gabriel
+          </h1>
+          <h1 className="font-Sugarpunch text-6xl md:text-8xl">Enke</h1>
+          <AnimatedText
+            className="md:mt-6 md:!text-4xl"
+            text="Computer Engennier Student"
+          />
+          <AnimatedText
+            className="md:my-6 md:!text-4xl"
+            text="Front-end Developer"
+          />
+          <Link
+            to="/gabrielenkeResume.pdf"
+            target={'_blank'}
+            className="group flex items-center rounded-lg border-2 border-solid border-transparent 
+									bg-dark p-2.5 px-6 text-lg font-semibold 
+									text-light hover:border-dark hover:bg-light hover:text-dark 
 									
-									dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light
-									hover:dark:border-light "
-								download={true}
-							>
-								Download CV
-								<img
-									className=" pl-1 w-5 group-hover:hidden "
-									src={pngCV}
-									alt=""
-								/>
-								<img
-									className="hidden pl-1 w-5 group-hover:block invert"
-									src={gifCV}
-									alt=""
-								/>
-							</Link>
-
-							<Link
-								to="mailto:gabrielenkee@icloud.com"
-								className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light"
-							>
-								Contact
-							</Link>
-						</div>
-					</div>
-				</div>
-			</main>
-		</>
-	);
+									dark:bg-light dark:text-dark hover:dark:border-light hover:dark:bg-dark
+									hover:dark:text-light "
+            download={true}
+          >
+            Download CV
+            <img
+              className=" w-5 pl-1 invert group-hover:hidden dark:invert-0 "
+              src={pngCV}
+              alt=""
+            />
+            <img
+              className="hidden w-5 pl-1 group-hover:block  dark:invert"
+              src={gifCV}
+              alt=""
+            />
+          </Link>
+          <div className="my-6 flex gap-6 md:my-12">
+            <motion.a href="" whileHover={{ y: -2 }} className="w-10">
+              <GithubIcon className="text-dark dark:text-light" />
+            </motion.a>
+            <motion.a href="/" whileHover={{ y: -2 }} className="w-10">
+              <LinkedInIcon className="" />
+            </motion.a>
+          </div>
+        </div>
+        <img
+          className="absolute left-0 top-[75%] w-40 md:top-1/4 md:w-96 2xl:w-[500px] "
+          src={HomeLeft}
+          alt=""
+        />
+        <img
+          className="absolute right-0 top-[80%] w-40 md:top-1/4 md:w-96 2xl:w-[500px] "
+          src={HomeRight}
+          alt=""
+        />
+      </section>
+    </>
+  );
 };
 
 export default Home;
