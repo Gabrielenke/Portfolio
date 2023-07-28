@@ -1,60 +1,78 @@
-import { HomeLeft, HomeRight } from "../images/homeImg/export";
-import Experience from "../components/Experience";
-import { motion } from "framer-motion";
-import { aboutPhoto } from "../images/aboutImg/export";
+import { HomeLeft, HomeRight } from '../images/homeImg/export';
+import Experience from '../components/Experience';
+import { motion } from 'framer-motion';
+import { aboutPhoto, planet, rocket } from '../images/aboutImg/export';
 
 const About = () => {
-	return (
-		<>
-			<main className="flex flex-col w-full items-center justify-center  dark:text-light ">
-				<img className="absolute top-[70%] left-0 " src={HomeLeft} alt="" />
-				<img className="absolute top-[180%] right-0  " src={HomeRight} alt="" />
-				<section className="flex flex-col gap-20 min-h-screen items-center justify-center ">
-					<div
-						className="flex flex-col-reverse 	mb-32  w-full items-center justify-center mx-auto gap-20
-						md:flex-row md:w-[60vw]	
+  return (
+    <>
+      <main className="flex w-full flex-col items-center justify-center  dark:text-light ">
+        <img
+          className="absolute left-0 top-[70%] hidden md:block"
+          src={HomeLeft}
+          alt=""
+        />
+        <img
+          className="absolute right-0 top-[180%] hidden md:block "
+          src={HomeRight}
+          alt=""
+        />
+        <img
+          className="absolute right-[7%] top-[75%] rotate-[225deg] dark:invert md:hidden "
+          src={rocket}
+          alt=""
+        />
+        <img
+          className="absolute left-0 top-[145%] w-52 md:hidden "
+          src={HomeLeft}
+          alt=""
+        />
+        <section className="flex min-h-screen flex-col items-center justify-center gap-20 ">
+          <div
+            className="mx-auto mb-32 	flex  w-full flex-col-reverse items-center justify-center gap-20
+						md:w-[60vw] md:flex-row	
 					
 					"
-					>
-						<div
-							className=" flex  w-[80vw] flex-col items-start
-						 self-center justify-center gap-2 z-50"
-						>
-							<h2 className="mb-4 text-4xl font-bold uppercase text-dark/75 dark:text-light/75 font-Sugarpunch">
-								About
-								<div className="w-1/2 border-b-[3px] border-solid border-primary dark:border-primaryDark h-4 " />
-							</h2>
-							<p className="font-medium text-xl">
-								Olá, sou Gabriel Enke, Sou apaixonado por aprender coisas novas
-								e estou sempre em busca de novos desafios. Atualmente estou
-								estudando ReactJs
-							</p>
-							<p className="font-medium text-xl">
-								Atualmente estou cursando o 2º semestre de Engenharia de
-								Computação na Escola de Engenharia de Piracicaba - EEP.
-							</p>
-							<p className="font medium text-xl">
-								Busco minha primeira experiência profissional na área de
-								desenvolvedor.
-							</p>
-						</div>
+          >
+            <div
+              className=" z-50  flex w-[80vw] flex-col
+						 items-start justify-center gap-2 self-center"
+            >
+              <h2 className="mb-4 font-Sugarpunch text-4xl font-bold uppercase text-dark/75 dark:text-light/75">
+                About
+                <div className="h-4 w-1/2 border-b-[3px] border-solid border-primary dark:border-primaryDark " />
+              </h2>
+              <p className="text-xl font-medium">
+                Olá, sou Gabriel Enke, Sou apaixonado por aprender coisas novas
+                e estou sempre em busca de novos desafios. Atualmente estou
+                estudando ReactJs
+              </p>
+              <p className="text-xl font-medium">
+                Atualmente estou cursando o 2º semestre de Engenharia de
+                Computação na Escola de Engenharia de Piracicaba - EEP.
+              </p>
+              <p className="font medium text-xl">
+                Busco minha primeira experiência profissional na área de
+                desenvolvedor.
+              </p>
+            </div>
 
-						<motion.div className="w-[50vw]  ">
-							<img
-								src={aboutPhoto}
-								alt="gabrielenke"
-								className=" w-full rounded-xl  "
-							/>
-						</motion.div>
-					</div>
-				</section>
-				<section>
-					<Experience />
-					<Experience education={true} />
-				</section>
-			</main>
-		</>
-	);
+            <motion.div className="w-[50vw]  ">
+              <img
+                src={aboutPhoto}
+                alt="gabrielenke"
+                className=" w-full rounded-xl  "
+              />
+            </motion.div>
+          </div>
+        </section>
+        <section>
+          <Experience />
+          <Experience education={true} />
+        </section>
+      </main>
+    </>
+  );
 };
 
 export default About;

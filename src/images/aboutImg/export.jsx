@@ -1,2 +1,4 @@
 import aboutPhoto from './aboutPhoto.jpeg';
-export { aboutPhoto };
+import planet from './planet.svg';
+import rocket from './rocket.svg';
+export { aboutPhoto, planet, rocket };
