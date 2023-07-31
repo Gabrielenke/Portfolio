@@ -27,6 +27,9 @@ export default {
     },
     fontFamily: {
       Sugarpunch: ['Sugarpunch DEMO', 'sans-serif'],
+      Montserrat: ['Montserrat', 'sans-serif'],
+      Roboto: ['Roboto Serif', 'sans-serif'],
+      RobotoSlab: ['Roboto Slab', 'sans-serif'],
     },
     extend: {
       animation: {

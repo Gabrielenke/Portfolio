@@ -5,7 +5,6 @@ import reactjs from './react.svg';
 import typescript from './typescript.svg';
 import git from './git.svg';
 import python from './python.svg';
-import vscode from './vscode.svg';
 import github from './github.svg';
 import tailwind from './tailwindcss.svg';
 import RectangleSkills from './RectangleSkills.png';
@@ -20,7 +19,6 @@ export {
   typescript,
   git,
   python,
-  vscode,
   github,
   tailwind,
   RectangleSkills,
