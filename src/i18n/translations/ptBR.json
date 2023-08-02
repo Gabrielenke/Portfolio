@@ -1,0 +1,35 @@
+{
+  "translation": {
+    "hello": "Oi,eu sou",
+    "school": "Estudante de Engenharia de Computação",
+
+    "about": "Sobre mim",
+    "aboutP1": "Olá, sou Gabriel Enke, Sou apaixonado por aprender coisas novas e estou sempre em busca de novos desafios. Atualmente estou estudando ReactJs",
+    "aboutP2": "Atualmente estou cursando o 2º semestre de Engenharia de Computação na Escola de Engenharia de Piracicaba - EEP.",
+    "aboutP3": "Busco minha primeira experiência profissional na área de desenvolvedor.",
+
+    "experience.title": "Cursos",
+
+    "experience.course1.title": "JavaScript do básico ao avançado (c/ Node.js e projetos)",
+    "experience.course1.month": "Maio-2023",
+    "experience.course1.description": "Aprenda tudo sobre JavaScript(ES6+), lógica de prog., orientação a objetos, crie projetos para web com Node.js e Express",
+
+    "experience.course2.title": "Curso de Python 3 do Básico Ao Avançado (com projetos reais)",
+    "experience.course2.month": "Junho-2023",
+    "experience.course2.description": "Python 3 completo: PySide6, Django, Selenium, Regexp, Testes, TDD, POO, Design Patterns GoF, algoritmos e programação.",
+
+    "experience.course3.title": "Curso de React.Js e Next.Js (Intermediário e Avançado)",
+    "experience.course3.month": "Julho-2023",
+    "experience.course3.description": "Aprenda ReactJS, NextJS, Styled-Components, Testes com Jest , Storybook, Strapi, HTML e CSS com TypeScript e JavaScript.",
+
+    "experience.course4.title": "Introdução ao Desenvolvimento Front-End",
+    "experience.course4.month": "Junho-2023",
+    "experience.course4.description": "Um curso on-line sem créditos autorizado pela Meta e ministrado através do Coursera , que ensina os fundamentos do desenvolvimento front-end",
+
+    "education.title": "Formação",
+
+    "education.course.title": "Bacharelado em Engenharia de computação",
+    "education.year": "2023-2027",
+    "education.place": "Graduação EEP Escola de Engenharia de Piracicaba"
+  }
+}

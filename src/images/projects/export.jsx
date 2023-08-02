@@ -1,3 +1,4 @@
-import mockupPack from "./mockupPack.jpg";
+import mockupPack from './mockupPack.jpg';
+import websiteIcon from './websiteIcon.svg';
 
-export { mockupPack };
+export { mockupPack, websiteIcon };

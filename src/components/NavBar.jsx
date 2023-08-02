@@ -1,25 +1,24 @@
 import { Link, useLocation } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import useThemeSwitcher from './hooks/useThemeSwitcher';
 import { useState } from 'react';
-import {
-  darkMode,
-  hamburger,
-  language,
-  lightMode,
-} from '../images/Icons/export';
+import { darkMode, hamburger, lightMode } from '../images/Icons/export';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const CustomLink = ({ href, title, className = '' }) => {
   const locationUrl = useLocation();
   return (
-    <Link to={href} className={`${className} group relative `}>
+    <Link
+      to={href}
+      className={`${className} group relative `}
+      onClick={() => setIsOpen(false)}
+    >
       {title}
 
       <span
         className={`ease absolute  -bottom-1.5 left-0 inline-block h-[2px]
-        bg-dark transition-[width] duration-300 group-hover:w-full ${
+        bg-light transition-[width] duration-300 group-hover:w-full dark:bg-dark lg:bg-dark lg:dark:bg-light ${
           locationUrl.pathname === href ? ' w-full' : 'w-0'
-        } dark:bg-light`}
+        } `}
       >
         {''}
       </span>
@@ -36,15 +35,15 @@ const NavBar = () => {
   };
 
   return (
-    <header className="mb-5  flex w-full items-center justify-between px-32 py-8 font-medium ">
-      <nav className="absolute left-0 ml-4 text-dark dark:text-light md:hidden ">
+    <header className="mb-5 flex  w-full items-center justify-between px-32 py-8 font-medium lg:mb-16 2xl:mb-5">
+      <nav className="absolute left-0 ml-4 text-dark dark:text-light lg:hidden ">
         <Link to="/" className=" text-2xl ">
           {'<Gabrielenke />'}
         </Link>
       </nav>
       <button
         onClick={handleClick}
-        className="absolute right-0 z-50 w-10 items-center md:hidden  "
+        className="absolute right-0 z-50 w-10 items-center lg:hidden  "
       >
         {isOpen ? (
           <svg
@@ -65,22 +64,22 @@ const NavBar = () => {
       </button>
 
       <div
-        className={`fixed left-1/2  top-1/2 z-30  flex min-w-[70vw] flex-col items-center justify-between transition-all duration-300  ease-in-out md:static md:w-full
-			  md:translate-x-0 md:translate-y-0 md:flex-row md:py-0
+        className={`fixed left-1/2  top-1/2 z-30  flex min-w-[70vw] flex-col items-center justify-between transition-all duration-300  ease-in-out lg:static lg:w-full
+			  lg:translate-x-0 lg:translate-y-0 lg:flex-row lg:py-0
 				${
           isOpen
-            ? ' -translate-x-1/2 -translate-y-1/2 rounded-lg bg-dark/90 py-32 text-light backdrop-blur-sm dark:bg-light/75 dark:text-dark  '
+            ? ' -translate-x-1/2 -translate-y-1/2 rounded-lg bg-dark/90 py-32 text-light  backdrop-blur-sm dark:bg-light/75 dark:text-dark '
             : '-translate-x-[150vw] -translate-y-1/2 text-dark dark:text-light'
         }
 				 `}
       >
-        <nav className=" mb-10 hidden flex-col items-center justify-center gap-10 px-4 text-center md:mb-0 md:flex ">
+        <nav className=" mb-10 hidden flex-col items-center justify-center gap-10 px-4 text-center md:mb-0 lg:flex ">
           <Link to="/" className="text-2xl ">
             {'<Gabrielenke />'}
           </Link>
         </nav>
 
-        <nav className="flex flex-col items-center justify-center gap-10 md:flex-row  ">
+        <nav className="flex flex-col items-center justify-center gap-10 lg:flex-row  ">
           <CustomLink href="/" title="Home"></CustomLink>
           <CustomLink href="/about" title="About"></CustomLink>
           <CustomLink href="/projects" title="Projects"></CustomLink>
@@ -88,19 +87,23 @@ const NavBar = () => {
           <div className="flex gap-6">
             <button
               onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
-              className={` flex items-center justify-center   ${
-                mode === 'light' ? 'text-dark' : 'text-light'
-              } `}
+              className="flex items-center justify-center"
             >
               {mode === 'dark' ? (
-                <img className="" src={lightMode} alt="" />
+                <img
+                  className="dark:invert lg:dark:invert-0"
+                  src={lightMode}
+                  alt=""
+                />
               ) : (
-                <img className="invert" src={darkMode} alt="" />
+                <img
+                  className="dark:invert lg:invert lg:dark:invert-0 "
+                  src={darkMode}
+                  alt=""
+                />
               )}
             </button>
-            <motion.a href="/" whileHover={{ y: -2 }} className="">
-              <img className="w-8 invert dark:invert-0" src={language} alt="" />
-            </motion.a>
+            <LanguageSwitcher />
           </div>
         </nav>
       </div>

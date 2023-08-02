@@ -4,23 +4,24 @@ import { gifCV, pngCV } from '../images/Icons/export';
 import { motion } from 'framer-motion';
 import { GithubIcon, LinkedInIcon } from '../components/Icons';
 import { HomeLeft, HomeRight } from '../images/homeImg/export';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
+  const { t } = useTranslation();
   return (
     <>
       <section className="relative -mt-36 flex min-h-screen items-center justify-center md:-mt-32 md:h-[calc(100vh-204px)]">
         <div className="flex flex-col items-center justify-center text-dark dark:text-light">
-          <p className="mb-5 font-Sugarpunch text-2xl md:text-4xl">Hi, I'm</p>
+          <p className="mb-5 font-Sugarpunch text-2xl md:text-4xl">
+            {t('hello')}
+          </p>
           <h1 className=" mb-4 font-Sugarpunch text-6xl md:text-8xl">
             Gabriel
           </h1>
           <h1 className="font-Sugarpunch text-6xl md:text-8xl">Enke</h1>
+          <AnimatedText className="md:mt-6 md:!text-3xl" text={t('school')} />
           <AnimatedText
-            className="md:mt-6 md:!text-4xl"
-            text="Computer Engennier Student"
-          />
-          <AnimatedText
-            className="md:my-6 md:!text-4xl"
+            className="md:my-6 md:!text-3xl"
             text="Front-end Developer"
           />
           <Link
@@ -56,12 +57,12 @@ const Home = () => {
           </div>
         </div>
         <img
-          className="absolute left-0 top-[75%] w-40 md:top-1/4 md:w-96 2xl:w-[500px] "
+          className="absolute left-0 top-[75%] w-40 md:top-[60%] md:w-56 xl:top-1/4 xl:w-96 2xl:w-[500px] "
           src={HomeLeft}
           alt=""
         />
         <img
-          className="absolute right-0 top-[80%] w-40 md:top-1/4 md:w-96 2xl:w-[500px] "
+          className="absolute right-0 top-[80%] w-40 md:top-[65%] md:w-56 xl:top-1/4 xl:w-96 2xl:w-[500px] "
           src={HomeRight}
           alt=""
         />

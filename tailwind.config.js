@@ -48,7 +48,7 @@ export default {
         },
       },
       colors: {
-        dark: '#000',
+        dark: '#121212',
         light: '#f5f5f5',
         primary: '#db2777', // 240,86,199
         primaryDark: '#2563eb', // 80,230,217

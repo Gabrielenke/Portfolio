@@ -1,0 +1,35 @@
+{
+  "translation": {
+    "hello": "Hi, I'm",
+    "school": "Computer Engineering Student",
+
+    "about": "About Me",
+    "aboutP1": "Hello, I'm Gabriel Enke, I'm passionate about learning new things and I'm always looking for new challenges. I'm currently studying ReactJs",
+    "aboutP2": "I am currently studying the 2nd semester of Computer Engineering at the Piracicaba School of Engineering - EEP.",
+    "aboutP3": "I'm looking for my first professional experience in the developer area.",
+
+    "experience.title": "Courses",
+
+    "experience.course1.title": "JavaScript from basic to advanced (w/ Node.js and projects)",
+    "experience.course1.month": "May-2023",
+    "experience.course1.description": "Learn everything about JavaScript(ES6+), program logic, object orientation, create web projects with Node.js and Express",
+
+    "experience.course2.title": "Python 3 course from Basic to Advanced (with real projects)",
+    "experience.course2.month": "June-2023",
+    "experience.course2.description": "Complete Python 3: PySide6, Django, Selenium, Regexp, Tests, TDD, OOP, GoF Design Patterns, algorithms and programming.",
+
+    "experience.course3.title": "React.Js and Next.Js Course (Intermediate and Advanced)",
+    "experience.course3.month": "July-2023",
+    "experience.course3.description": "Learn ReactJS, NextJS, Styled-Components, Testing with Jest, Storybook, Strapi, HTML and CSS with TypeScript and JavaScript.",
+
+    "experience.course4.title": "Introduction to Front End Development",
+    "experience.course4.month": "June-2023",
+    "experience.course4.description": "A no-credits online course authorized by Meta and taught through Coursera, which teaches the fundamentals of front-end development",
+
+    "education.title": "Education",
+
+    "education.course.title": "Bachelor of Computer Engineering",
+    "education.year": "2023-2027",
+    "education.place": "Graduate EEP School of Engineering of Piracicaba"
+  }
+}
