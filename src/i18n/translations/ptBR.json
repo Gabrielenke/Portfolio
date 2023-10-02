@@ -30,6 +30,9 @@
 
     "education.course.title": "Bacharelado em Engenharia de computação",
     "education.year": "2023-2027",
-    "education.place": "Graduação EEP Escola de Engenharia de Piracicaba"
+    "education.place": "Graduação EEP Escola de Engenharia de Piracicaba",
+
+    "projects.title": "Meus projetos",
+    "projects.project1.description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit"
   }
 }

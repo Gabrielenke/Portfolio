@@ -31,14 +31,9 @@ const About = () => {
           alt=""
         />
         <section className="flex min-h-screen flex-col items-center justify-center gap-20 ">
-          <div
-            className="mx-auto mb-32 	flex  w-full flex-col-reverse items-center justify-center gap-20
-						md:w-[60vw] md:flex-row	
-					
-					"
-          >
+          <div className="mx-auto mb-32 	flex  w-full flex-col-reverse items-center justify-center gap-20 md:w-[60vw] md:flex-row">
             <div
-              className=" z-50  flex w-[80vw] flex-col
+              className=" flex w-[80vw] flex-col
 						 items-start justify-center gap-2 self-center"
             >
               <h2 className="mb-4 font-Sugarpunch text-4xl font-bold uppercase text-dark/75 dark:text-light/75">

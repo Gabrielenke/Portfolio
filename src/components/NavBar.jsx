@@ -35,7 +35,7 @@ const NavBar = () => {
   };
 
   return (
-    <header className="mb-5 flex  w-full items-center justify-between px-32 py-8 font-medium lg:mb-16 2xl:mb-5">
+    <header className="flex w-full  items-center justify-between px-32 py-8 font-medium xxs:mb-5 lg:mb-16 2xl:mb-5">
       <nav className="absolute left-0 ml-4 text-dark dark:text-light lg:hidden ">
         <Link to="/" className=" text-2xl ">
           {'<Gabrielenke />'}
@@ -43,7 +43,7 @@ const NavBar = () => {
       </nav>
       <button
         onClick={handleClick}
-        className="absolute right-0 z-50 w-10 items-center lg:hidden  "
+        className="fixed right-0 z-50 w-10 items-center lg:hidden  "
       >
         {isOpen ? (
           <svg
@@ -64,7 +64,7 @@ const NavBar = () => {
       </button>
 
       <div
-        className={`fixed left-1/2  top-1/2 z-30  flex min-w-[70vw] flex-col items-center justify-between transition-all duration-300  ease-in-out lg:static lg:w-full
+        className={`fixed left-1/2 top-1/2 z-30 flex min-w-[70vw] flex-col items-center justify-between transition-all duration-300  ease-in-out lg:static lg:w-full
 			  lg:translate-x-0 lg:translate-y-0 lg:flex-row lg:py-0
 				${
           isOpen
@@ -74,7 +74,7 @@ const NavBar = () => {
 				 `}
       >
         <nav className=" mb-10 hidden flex-col items-center justify-center gap-10 px-4 text-center md:mb-0 lg:flex ">
-          <Link to="/" className="text-2xl ">
+          <Link to="/" className="text-2xl">
             {'<Gabrielenke />'}
           </Link>
         </nav>
@@ -84,6 +84,7 @@ const NavBar = () => {
           <CustomLink href="/about" title="About"></CustomLink>
           <CustomLink href="/projects" title="Projects"></CustomLink>
           <CustomLink href="/skills" title="Skills"></CustomLink>
+
           <div className="flex gap-6">
             <button
               onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}

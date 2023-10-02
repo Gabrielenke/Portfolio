@@ -30,6 +30,10 @@
 
     "education.course.title": "Bachelor of Computer Engineering",
     "education.year": "2023-2027",
-    "education.place": "Graduate EEP School of Engineering of Piracicaba"
+    "education.place": "Graduate EEP School of Engineering of Piracicaba",
+
+    "projects.title": "My Projects",
+
+    "projects.project1.description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit"
   }
 }

@@ -132,7 +132,6 @@ table {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  height: 100vh;
 }
 body::-webkit-scrollbar {
   display: none;

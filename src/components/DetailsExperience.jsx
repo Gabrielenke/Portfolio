@@ -43,7 +43,7 @@ const DetailsExperience = ({
             whileInView={{ y: 0 }}
             transition={{ duration: 0.5, type: 'spring' }}
           >
-            <h3 className="text-2xl font-bold">
+            <h3 className="text-[24px] font-bold">
               {title}
               <a
                 href={companyLink}
