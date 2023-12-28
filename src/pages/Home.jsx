@@ -48,10 +48,20 @@ const Home = () => {
             />
           </Link>
           <div className="my-6 flex gap-6 md:my-12">
-            <motion.a href="" whileHover={{ y: -2 }} className="w-10">
+            <motion.a
+              href="https://github.com/Gabrielenke"
+              target="_blank"
+              whileHover={{ y: -2 }}
+              className="w-10"
+            >
               <GithubIcon className="text-dark dark:text-light" />
             </motion.a>
-            <motion.a href="/" whileHover={{ y: -2 }} className="w-10">
+            <motion.a
+              href="https://www.linkedin.com/in/gabrielenke/"
+              target="_blank"
+              whileHover={{ y: -2 }}
+              className="w-10"
+            >
               <LinkedInIcon className="" />
             </motion.a>
           </div>

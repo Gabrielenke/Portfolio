@@ -20,7 +20,6 @@ const LanguageSwitcher = () => {
 
   const handleLanguageChange = (languageOption) => {
     i18n.changeLanguage(languageOption.value);
-    // Salvar a escolha do idioma no localStorage
     localStorage.setItem('selectedLanguage', languageOption.value);
   };
 
@@ -29,12 +28,10 @@ const LanguageSwitcher = () => {
       {languageOptions.map((languageOption) => (
         <motion.button
           whileHover={{ scale: 1.1 }}
-          className=""
           key={languageOption.value}
           onClick={() => handleLanguageChange(languageOption)}
         >
           <img className="w-8" src={languageOption.flag} alt="" />
-          {/* <span>{languageOption.name}</span> */}
         </motion.button>
       ))}
     </div>
